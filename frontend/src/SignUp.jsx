@@ -95,12 +95,12 @@ const SignUp = () => {
     })
     
     return (
-        <div className="flex   items-center flex-col  ">
+        <div className="flex   items-center flex-col  md:w-full">
             <NavBar />
             <h1 className="text-3xl text-blue-700 font-bold mt-5">Join BlogVerse</h1>
-            <p className="text-l text-gray-700 text-center">Create your account and <br ></br>
+            <p className="text-l text-gray-700 text-center ">Create your account and <br ></br>
                 start your Blogging journey today</p>
-            <form  onSubmit={handleSubmit} className="flex flex-col border-1 border-black w-1/4 py-0.5  mt-8 gap-3 items-center rounded-3xl">
+            <form  onSubmit={handleSubmit} className="flex flex-col border-1 border-black md:w-[50%] py-0.5  mt-8 gap-3 items-center rounded-3xl  w:[90%]">
                 <div className="w-[90%] flex flex-col gap-2 ">
                     <p className="font-semibold text-md text-gray-700">Full Name </p>
                     <div className="relative">
@@ -151,7 +151,7 @@ const SignUp = () => {
 
 
                 </div>
-                {errors.password && <p lassName="text-red-600">{errors.password}</p>}
+                {errors.password && <p className="text-red-600">{errors.password}</p>}
                 <div className="w-[90%] flex flex-col gap-2">
                     <p className="font-semibold text-md text-gray-700">Confirm Password</p>
                     <div className="relative">
@@ -169,7 +169,7 @@ const SignUp = () => {
                     </div>
 
                 </div>
-                {errors.confirmPassword && <p lassName="text-red-600">{errors.confirmPassword}</p>}
+                {errors.confirmPassword && <p className="text-red-600">{errors.confirmPassword}</p>}
                 <div className="flex gap-2 border-1 border-b-gray-800 w-[90%] px-3 py-2 rounded-xl items-center justify-center">
                     <input type="checkbox"
                         className="h-3 w-5  "
@@ -177,7 +177,7 @@ const SignUp = () => {
                     />
                     <p>I agree to the Terms of Service and Privacy Policy</p>
                 </div>
-                {error && <p className="text-red-600">{error}</p>}
+                {/* {error && <p className="text-red-600">{error}</p>} */}
                 {success && <p className="text-green-600">{success}</p>}
 
                 <button type="submit" className="bg-purple-600 py-4 w-[90%] text-white rounded-xl font-semibold cursor-pointer flex justify-center gap-5">  <User className="text-black" /><p>Create Account</p></button>

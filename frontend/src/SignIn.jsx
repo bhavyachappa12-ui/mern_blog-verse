@@ -7,7 +7,7 @@ const SignIn = () => {
       <div className='w-[90%] md:w-1/3  flex  flex-col items-center mt-10 gap-2 border-1 border-gray-300  rounded-2xl shadow-2xl'>
        <h1 className='mt-5 text-xl font-bold'>Sign In</h1>
        <p className='text-sm text-gray-700'>Access your account</p>
-       <form action="" className='w-[80%] my-5'>
+       <form action="" className='w-[90%] my-5 md:w-[50%]'>
         <div className='w-[95%] mb-4'>
             <p className='text-sm text-gray-700 font-semibold pb-1.5 '>Email Address</p>
             <input className='border-1 border-gray-300 bg-gray-50 w-full  rounded-md py-3 px-3 focus:outline-none focus:border-black text-sm focus:border-1.8 duration-200' type="text" placeholder='✉ sample@gmail.com' />
