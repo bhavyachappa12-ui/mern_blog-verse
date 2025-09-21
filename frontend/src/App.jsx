@@ -1,6 +1,6 @@
 
 import NavBar from "./NavBar" 
-import SignUp from "./Signup"
+import SignUp from "./SignUp.jsx"
 import SignIn from "./SignIn"
 import Home from "./Home"
 import {Routes, Route} from 'react-router-dom'
